@@ -1,5 +1,4 @@
 import { Argon2id } from "oslo/password";
-import { generateId } from "lucia";
 import { db } from "~/server/db/db";
 import { users } from "~/server/db/schema";
 import { lucia } from "~/server/utils/auth";

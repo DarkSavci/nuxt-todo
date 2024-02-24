@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { FormError, FormSubmitEvent } from "#ui/types";
+import type { FormError } from "#ui/types";
 
 const state = useState("state", () => ({
   username: "",
@@ -13,7 +13,7 @@ const validate = (state: any): FormError[] => {
   return errors;
 };
 
-async function onSubmit(event: FormSubmitEvent<any>) {
+async function onSubmit() {
   const result = await useFetch("/api/auth/register", {
     method: "POST",
     body: {

@@ -5,5 +5,6 @@ module.exports = {
     "vue/max-attributes-per-line": "off",
     "vue/multi-word-component-names": "off",
     "vue/attributes-hyphenation": "off",
+    "vue/singleline-html-element-content-newline": "off",
   },
 };
